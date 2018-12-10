@@ -1,0 +1,3 @@
+[submodule "iro.js"]
+	path = iro.js
+	url = https://github.com/jaames/iro.js

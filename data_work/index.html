@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LED Control</title>
+	<meta name="theme-color" content="#00878f">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="144x144"	href="/favicon-144x144.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="/favicon.ico">
+	<link rel="manifest" href="/manifest.json">
+	<link href="main.css" rel="stylesheet" type="text/css">
+	<script src="iro.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="WebSocket.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+	<center>
+		<header>
+			<h1>LED Control</h1>
+		</header>
+		<div>
+			<div id="colorPicker"></div>
+			<button id="rainbow" class="button" style="background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet,red); border-radius: 6px;" onclick="sendPattern('3');">Rainbow</button>&nbsp;&nbsp;&nbsp;
+			<button id="rainbowCycle" class="button" style="border-radius: 6px;" onclick="sendPattern('4');">Fade</button>
+		</div>
+	</center>
+<div id="overlay">
+</div>
+</body>
+</html>
+
+
+	<!--<p style="margin:8px 0px"><button id="rainbow" class="button" style="background-color:#999" onclick="rainbowEffect();">Rainbow</button></p> -->
+		<!--
+					<div>RGB
+				<label class="switch">
+					<input type="checkbox">
+					<span class="slider"></span>
+				</label>
+			RGBW
+			<hr>-->
